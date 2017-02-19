@@ -1,0 +1,23 @@
+﻿<Window x:Class="ComboBoxBackgroundIssue.WithBackground"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d"
+		Title="WithBackground" Height="300" Width="300">
+	<Window.Background>
+		<LinearGradientBrush>
+			<GradientStop Offset="0" Color="White"/>
+			<GradientStop Offset="1" Color="LightGray"/>
+		</LinearGradientBrush>
+	</Window.Background>
+	<Grid>
+		<ComboBox HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
+			<ComboBoxItem>One</ComboBoxItem>
+			<ComboBoxItem>Two</ComboBoxItem>
+			<ComboBoxItem>Three</ComboBoxItem>
+			<ComboBoxItem>Four</ComboBoxItem>
+			<ComboBoxItem>Five</ComboBoxItem>
+		</ComboBox>
+	</Grid>
+</Window>
